@@ -13,9 +13,9 @@ This example demonstrates how to use the `ChatControl` to create a simple chat i
 <!-- default file list -->
 ## Files to Review
 
-* [MainForm.cs](DevExpress.AI.WinForms.HtmlChat.Demo/MainForm.cs)
-* [ChatControl.cs](DevExpress.AI.WinForms.HtmlChat/ChatControl.cs)
-* [Program.cs](DevExpress.AI.WinForms.HtmlChat.Demo/Program.cs)
+* [MainForm.cs](./CS/DevExpress.AI.WinForms.HtmlChat.Demo/MainForm.cs)
+* [ChatControl.cs](./CS/DevExpress.AI.WinForms.HtmlChat/ChatControl.cs)
+* [Program.cs](./CS/DevExpress.AI.WinForms.HtmlChat.Demo/Program.cs)
 <!-- default file list end -->
 
 ## Documentation
