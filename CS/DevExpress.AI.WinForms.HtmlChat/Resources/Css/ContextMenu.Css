@@ -37,24 +37,3 @@
         color: @DisabledText;
         opacity: 0.3;
     }
-
-.separator {
-    border-bottom: solid 1px @WindowText/0.1;
-    margin: 4px 0px;
-    display: flex;
-    align-self: stretch;
-}
-
-.beak-bottom {
-    width: 20px;
-    height: 8px;
-    min-width: 20px;
-    max-height: 8px;
-}
-
-.like {
-    width: 16px;
-    height: 16px;
-    min-width: 16px;
-    padding-right: 8px;
-}
