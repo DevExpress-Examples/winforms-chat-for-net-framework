@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpress.AI.WinForms.HtmlChat.Demo", "DevExpress.AI.WinForms.HtmlChat.Demo\DevExpress.AI.WinForms.HtmlChat.Demo.csproj", "{75A475A1-F009-48F1-A5B7-A16D8E3E5822}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B903264D-3588-468B-84C1-E02D21C5D1E1} = {B903264D-3588-468B-84C1-E02D21C5D1E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpress.AI.WinForms.HtmlChat", "DevExpress.AI.WinForms.HtmlChat\DevExpress.AI.WinForms.HtmlChat.csproj", "{B903264D-3588-468B-84C1-E02D21C5D1E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75A475A1-F009-48F1-A5B7-A16D8E3E5822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A475A1-F009-48F1-A5B7-A16D8E3E5822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A475A1-F009-48F1-A5B7-A16D8E3E5822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A475A1-F009-48F1-A5B7-A16D8E3E5822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B903264D-3588-468B-84C1-E02D21C5D1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B903264D-3588-468B-84C1-E02D21C5D1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B903264D-3588-468B-84C1-E02D21C5D1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B903264D-3588-468B-84C1-E02D21C5D1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF546309-2F48-4431-94AD-E7F2202CF7B3}
+	EndGlobalSection
+EndGlobal

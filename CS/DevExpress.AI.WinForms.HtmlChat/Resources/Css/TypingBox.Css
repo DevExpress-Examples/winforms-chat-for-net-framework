@@ -1,0 +1,48 @@
+.typingBox {
+	padding: 0px 16px 16px 16px;
+	background-color: @Control;
+}
+
+.container {
+	background-color: @Window;
+	color: @WindowText;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	align-self: center;
+	padding: 5px 8px 5px 13px;
+	border-style: solid;
+	border-color: @WindowText/0.2;
+	border-width: 1px;
+	border-radius: 8px 8px 0px 8px;
+}
+
+.message {
+	max-height: 60px;
+	flex-grow: 1;
+}
+
+.separator-Container {
+	width: 1px;
+	height: 39px;
+	background-color: @WindowText/0.1;
+	margin: 6px 16px;
+}
+
+.button {
+	width: 23px;
+	height: 23px;
+	padding: 8px;
+	opacity: 0.5;
+}
+
+	.button:hover {
+		border-radius: 4px;
+		background-color: @Control;
+	}
+
+	.button:disabled {
+		opacity: 0.25;
+		background-color: #00000000;
+	}

@@ -1,0 +1,60 @@
+﻿.container {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px 24px 16px;
+}
+
+.shadow {
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    background-color: @Window;
+    color: @WindowText;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+    .menuItem:hover {
+        border-radius: 4px;
+        background-color: @Control;
+    }
+
+    .menuItem:disabled {
+        color: @DisabledText;
+        opacity: 0.3;
+    }
+
+.separator {
+    border-bottom: solid 1px @WindowText/0.1;
+    margin: 4px 0px;
+    display: flex;
+    align-self: stretch;
+}
+
+.beak-bottom {
+    width: 20px;
+    height: 8px;
+    min-width: 20px;
+    max-height: 8px;
+}
+
+.like {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    padding-right: 8px;
+}
