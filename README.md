@@ -1,5 +1,4 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/394978269/24.2.1%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1301351)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
@@ -14,9 +13,9 @@ This example demonstrates how to use the `ChatControl` to create a simple chat i
 <!-- default file list -->
 ## Files to Review
 
-* [MainForm.cs](DevExpress.AI.WinForms.HtmlChat.Demo/MainForm.cs)
-* [ChatControl.cs](DevExpress.AI.WinForms.HtmlChat/ChatControl.cs)
-* [Program.cs](DevExpress.AI.WinForms.HtmlChat.Demo/Program.cs)
+* [MainForm.cs](./CS/DevExpress.AI.WinForms.HtmlChat.Demo/MainForm.cs)
+* [ChatControl.cs](./CS/DevExpress.AI.WinForms.HtmlChat/ChatControl.cs)
+* [Program.cs](./CS/DevExpress.AI.WinForms.HtmlChat.Demo/Program.cs)
 <!-- default file list end -->
 
 ## Documentation
