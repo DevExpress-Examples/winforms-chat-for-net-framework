@@ -33,8 +33,7 @@
 .button {
 	width: 23px;
 	height: 23px;
-	padding: 8px;
-	opacity: 0.5;
+	padding: 8px;	
 }
 
 	.button:hover {
