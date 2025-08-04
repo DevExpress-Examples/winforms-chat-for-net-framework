@@ -1,5 +1,4 @@
-﻿namespace DevExpress.AI.WinForms.HtmlChat
-{
+﻿namespace DevExpress.AI.WinForms.HtmlChat {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
@@ -17,15 +16,12 @@
     using Microsoft.Extensions.DependencyInjection;
 
     [ToolboxItem(true)]
-    public partial class ChatControl : XtraUserControl
-    {
+    public partial class ChatControl : XtraUserControl {
         BindingList<ChatMessage> messages = new BindingList<ChatMessage>();
 
-        public ChatControl()
-        {
+        public ChatControl() {
             InitializeComponent();
-            if (!DesignMode)
-            {
+            if (!DesignMode) {
                 InitializeStyles();
                 InitializeBindings();
                 InitializeMessageEdit();
@@ -40,23 +36,19 @@
                 messageMenuPopup.Hide();
             };
         }
-        void InitializeMessageEdit()
-        {
+        void InitializeMessageEdit() {
             var autoHeightEdit = messageEdit as IAutoHeightControlEx;
             autoHeightEdit.AutoHeightEnabled = true;
             autoHeightEdit.HeightChanged += OnMessageHeightChanged;
         }
 
-        void InitializeStyles()
-        {
+        void InitializeStyles() {
             Styles.TypingBox.Apply(typingBox);
             Styles.NoMessages.Apply(messagesItemsView.EmptyViewHtmlTemplate);
         }
 
-        async void MessageEdit_PreviewKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
+        async void MessageEdit_PreviewKeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
                 e.Handled = true;
                 string text = messageEdit.Text;
                 messageEdit.BeginInvoke(new Action(() => messageEdit.Text = string.Empty));
@@ -64,22 +56,18 @@
             }
         }
 
-        void OnMessageHeightChanged(object sender, EventArgs e)
-        {
+        void OnMessageHeightChanged(object sender, EventArgs e) {
             var contentSize = typingBox.GetContentSize();
             typingBox.Height = contentSize.Height;
         }
 
-        void OnMessagesViewElementMouseClick(object sender, ItemsViewHtmlElementMouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
+        void OnMessagesViewElementMouseClick(object sender, ItemsViewHtmlElementMouseEventArgs e) {
+            if (e.Button == MouseButtons.Right) {
                 if (!string.IsNullOrEmpty(messagesItemsView.SelectedText))
                     ShowContextMenu(e);
             }
         }
-        void OnQueryItemTemplate(object sender, QueryItemTemplateEventArgs e)
-        {
+        void OnQueryItemTemplate(object sender, QueryItemTemplateEventArgs e) {
             var message = e.Row as ChatMessage;
             if (message == null)
                 return;
@@ -92,8 +80,7 @@
             e.Template.Template = e.Template.Template.Replace("${Text}", htmlString);
         }
 
-        void ShowContextMenu(ItemsViewHtmlElementMouseEventArgs e)
-        {
+        void ShowContextMenu(ItemsViewHtmlElementMouseEventArgs e) {
             Styles.ContextMenu.Apply(messageMenuPopup);
             var size = ScaleDPI.ScaleSize(new Size(212, 100));
             var location = new Point(e.X - size.Width / 2, e.Y - size.Height + ScaleDPI.ScaleVertical(8));
@@ -101,41 +88,33 @@
             messageMenuPopup.Show(gridControl, screenRect);
         }
 
-        async void TypingBox_ElementMouseClick(object sender, Utils.Html.DxHtmlElementMouseEventArgs e)
-        {
-            if (e.ElementId == "btnSend")
-            {
+        async void TypingBox_ElementMouseClick(object sender, Utils.Html.DxHtmlElementMouseEventArgs e) {
+            if (e.ElementId == "btnSend") {
                 string message = messageEdit.Text;
                 messageEdit.BeginInvoke(new Action(() => messageEdit.Text = string.Empty));
                 await SendMessage(message);
 
             }
-            if (e.ElementId == "btnRemove")
-            {
+            if (e.ElementId == "btnRemove") {
                 ClearMessages();
             }
         }
 
-        protected override void OnHandleCreated(EventArgs e)
-        {
+        protected override void OnHandleCreated(EventArgs e) {
             base.OnHandleCreated(e);
-            if (!DesignMode)
-            {
+            if (!DesignMode) {
                 IChatClient service = AIExtensionsContainerDesktop.Default.GetService<IChatClient>();
-                if (service == null)
-                {
+                if (service == null) {
                     throw new InvalidOperationException("IChatClient service is not registered in AIExtensionsContainerDesktop.");
                 }
             }
         }
 
-        public void SetMessages(IEnumerable<ChatMessage> chatMessages)
-        {
+        public void SetMessages(IEnumerable<ChatMessage> chatMessages) {
             if (chatMessages == null)
                 throw new ArgumentNullException(nameof(chatMessages));
             messages.Clear();
-            foreach (var message in chatMessages)
-            {
+            foreach (var message in chatMessages) {
                 if (message == null)
                     continue;
                 messages.Add(message);
@@ -144,13 +123,11 @@
                 messagesItemsView.MoveLast();
         }
 
-        public void ClearMessages()
-        {
+        public void ClearMessages() {
             messages.Clear();
         }
 
-        public async Task SendMessage(string userContent)
-        {
+        public async Task SendMessage(string userContent) {
             if (string.IsNullOrEmpty(userContent))
                 return;
             IChatClient service = AIExtensionsContainerDesktop.Default.GetService<IChatClient>();
@@ -159,29 +136,25 @@
             AIOverlayForm form = new AIOverlayForm();
             var cancellationTokenSource = new CancellationTokenSource();
             form.ShowLoading(this, cancellationTokenSource);
-            try
-            {
+            try {
                 ChatResponse chatResponse = await service.GetResponseAsync(messages, cancellationToken: cancellationTokenSource.Token);
                 messages.AddMessages(chatResponse);
                 messagesItemsView.MoveLast();
                 form.Close();
                 form.Dispose();
             }
-            catch (Exception e)
-            {
+            catch (Exception e) {
                 form.ShowError(this, e.Message, true);
             }
         }
 
-        sealed class Styles
-        {
+        sealed class Styles {
             public static Style ContextMenu = new ContextMenuStyle();
             public static Style Message = new MessageStyle();
             public static Style MyMessage = new MyMessageStyle();
             public static Style NoMessages = new NoMessagesStyle();
             public static Style TypingBox = new TypingBoxStyle();
 
-            //
             sealed class MessageStyle : Style { }
             sealed class MyMessageStyle : Style { }
             sealed class ContextMenuStyle : Style { }
