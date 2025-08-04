@@ -32,20 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.AIIntegration.Desktop.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.WinForms.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.BonusSkins.v25.2" />
-    <Reference Include="DevExpress.Data.Desktop.v25.2" />
-    <Reference Include="DevExpress.Data.v25.2" />
-    <Reference Include="DevExpress.Utils.v25.2" />
-    <Reference Include="DevExpress.Sparkline.v25.2.Core" />
-    <Reference Include="DevExpress.XtraEditors.v25.2" />
-    <Reference Include="DevExpress.Printing.v25.2.Core" />
-    <Reference Include="DevExpress.Drawing.v25.2" />
-    <Reference Include="DevExpress.XtraGrid.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
-    <Reference Include="DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
-    <Reference Include="DevExpress.XtraPrinting.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.AIIntegration.Desktop.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.WinForms.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v25.1" />
+    <Reference Include="DevExpress.Data.Desktop.v25.1" />
+    <Reference Include="DevExpress.Data.v25.1" />
+    <Reference Include="DevExpress.Utils.v25.1" />
+    <Reference Include="DevExpress.Sparkline.v25.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v25.1" />
+    <Reference Include="DevExpress.Printing.v25.1.Core" />
+    <Reference Include="DevExpress.Drawing.v25.1" />
+    <Reference Include="DevExpress.XtraGrid.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v25.1, Version=25.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
