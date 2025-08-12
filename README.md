@@ -20,7 +20,7 @@ This example extends the DevExpress WinForms Chat Client App demo. It creates a 
     * `GridControl` - Displays the conversation history
     * `HtmlContentControl` - Renders styled messages
     * `MemoEdit` - Captures user input
-* **[DevExpress AI-powered Extensions](https://www.devexpress.com/winforms/ai-powered-extensions)**
+* **[DevExpress AI-powered Extensions](https://www.devexpress.com/products/ai-powered-extensions)**
 * **HTML & CSS Styling**: [DevExpress HTML & CSS Support](https://www.devexpress.com/winforms/html-css)
 
 ## Prerequisites
@@ -153,3 +153,4 @@ void OnQueryItemTemplate(object sender, QueryItemTemplateEventArgs e) {
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
