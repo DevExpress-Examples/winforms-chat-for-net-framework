@@ -10,6 +10,7 @@
     using DevExpress.AIIntegration;
     using DevExpress.AIIntegration.WinForms;
     using DevExpress.XtraEditors;
+    using DevExpress.XtraEditors.AI.Native;
     using DevExpress.XtraEditors.Controls;
     using DevExpress.XtraGrid.Views.Items;
     using DevExpress.XtraSplashScreen;
