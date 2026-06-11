@@ -23,7 +23,7 @@ namespace DevExpress.AI.WinForms.HtmlChat.Demo {
             AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(AzureOpenAIEndpoint, AzureOpenAIKey, new AzureOpenAIClientOptions() {
                 Transport = new PromoteHttpStatusErrorsPipelineTransport()
             });
-            IChatClient chatClient = azureOpenAIClient.GetChatClient("gpt-4o-mini").AsIChatClient();
+            IChatClient chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient();
             var container = AIExtensionsContainerDesktop.Default;
             container.RegisterChatClient(chatClient);
 
@@ -45,7 +45,7 @@ namespace DevExpress.AI.WinForms.HtmlChat.Demo {
             get {
                 string azureOpenAIEndpoint = GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT", IsDeveloperMode);
                 if(string.IsNullOrEmpty(azureOpenAIEndpoint))
-                    azureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";//DevExpress proxy-server            
+                    azureOpenAIEndpoint = "https://api.devexpress.com/demo-openai";//DevExpress proxy-server            
                 return new Uri(azureOpenAIEndpoint);
             }
         }

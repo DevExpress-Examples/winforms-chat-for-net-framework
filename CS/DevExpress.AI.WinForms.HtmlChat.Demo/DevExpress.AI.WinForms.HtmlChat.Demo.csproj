@@ -32,21 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.AIIntegration.Desktop.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.WinForms.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.BonusSkins.v25.2" />
-    <Reference Include="DevExpress.Data.Desktop.v25.2" />
-    <Reference Include="DevExpress.Data.v25.2" />
-    <Reference Include="DevExpress.Utils.v25.2" />
-    <Reference Include="DevExpress.Sparkline.v25.2.Core" />
-    <Reference Include="DevExpress.XtraBars.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v25.2" />
-    <Reference Include="DevExpress.Printing.v25.2.Core" />
-    <Reference Include="DevExpress.Drawing.v25.2" />
-    <Reference Include="DevExpress.XtraGrid.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v25.2, Version=25.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.AIIntegration.Desktop.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.WinForms.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v26.1" />
+    <Reference Include="DevExpress.Data.Desktop.v26.1" />
+    <Reference Include="DevExpress.Data.v26.1" />
+    <Reference Include="DevExpress.Utils.v26.1" />
+    <Reference Include="DevExpress.Sparkline.v26.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v26.1" />
+    <Reference Include="DevExpress.Printing.v26.1.Core" />
+    <Reference Include="DevExpress.Drawing.v26.1" />
+    <Reference Include="DevExpress.XtraGrid.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v26.1, Version=26.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Azure.AI.OpenAI">
-      <Version>2.2.0-beta.5</Version>
+      <Version>2.3.0-beta.2</Version>
     </PackageReference>
     <PackageReference Include="Markdown">
       <Version>2.2.1</Version>
@@ -105,7 +105,7 @@
       <Version>9.7.1-preview.1.25365.4</Version>
     </PackageReference>
     <PackageReference Include="System.ClientModel">
-      <Version>1.5.1</Version>
+      <Version>1.6.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -122,4 +122,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.2-beta\analyzers\dotnet\DevExpress.Generator.dll" Visible="false" Condition="Exists('C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.2-beta\analyzers\dotnet\DevExpress.Generator.dll')" />
+  </ItemGroup>
 </Project>
