@@ -32,21 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.AIIntegration.Desktop.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.AIIntegration.WinForms.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.Desktop.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.AIIntegration.WinForms.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v26.1" />
     <Reference Include="DevExpress.Data.Desktop.v26.1" />
     <Reference Include="DevExpress.Data.v26.1" />
     <Reference Include="DevExpress.Utils.v26.1" />
     <Reference Include="DevExpress.Sparkline.v26.1.Core" />
-    <Reference Include="DevExpress.XtraBars.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v26.1" />
     <Reference Include="DevExpress.Printing.v26.1.Core" />
     <Reference Include="DevExpress.Drawing.v26.1" />
-    <Reference Include="DevExpress.XtraGrid.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v26.1, Version=26.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -123,6 +123,6 @@
   </Target>
   -->
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.3\analyzers\dotnet\DevExpress.Generator.dll" Visible="false" Condition="Exists('C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.3\analyzers\dotnet\DevExpress.Generator.dll')" />
+    <Analyzer Include="C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.4\analyzers\dotnet\DevExpress.Generator.dll" Visible="false" Condition="Exists('C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.4\analyzers\dotnet\DevExpress.Generator.dll')" />
   </ItemGroup>
 </Project>
